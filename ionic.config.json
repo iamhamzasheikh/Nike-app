@@ -1,0 +1,7 @@
+{
+  "name": "nike-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
