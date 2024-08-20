@@ -1,6 +1,8 @@
 .header {
   padding: 10px 20px;
   background-color: #ffffff;
+  width: 95%;
+  margin: 0 auto;
 }
 
 ion-header {
@@ -95,3 +97,52 @@ ion-header {
 
 
 // ---Sliders-section
+
+swiper-container {
+  swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      border-radius: 25px;
+      align-items: center;
+    }
+  }
+}
+
+.shoe-slider-main-div {
+  border: 2px solid red;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .left-div {
+    background-color: #5FE0D7;
+    border-radius: 10px;
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      text-align: center;
+      align-items: center;
+    }
+  }
+  .button-container {
+    background-color: #5FE0D7;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    ion-button {
+      color: #000;
+      position: relative;
+      top: 45%;
+      left: 50%;
+      transform: translate(-52% , -55%);
+      font-size: 24px;
+    }
+  }
+}

@@ -1,31 +1,95 @@
 <div class="header">
-    <ion-header class="ion-no-border">
-      <ion-toolbar>
-        <div class="left-content">
-          <div class="image-container">
-            <img src="/assets/images/img_avatar-1.png" alt="Profile">
-          </div>
-          <div class="welcome-note">
-            <h1>WELCOME</h1>
-            <p>let's explore trends</p>
-          </div>
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <div class="left-content">
+        <div class="image-container">
+          <img src="/assets/images/img_avatar-1.png" alt="Profile">
         </div>
-        <ion-buttons slot="end">
-          <div class="search-container">
-            <ion-searchbar placeholder="Search" class="desktop-search"></ion-searchbar>
-            <ion-button class="mobile-search">
-              <ion-icon name="search-outline"></ion-icon>
-            </ion-button>
-          </div>
-        </ion-buttons>
-      </ion-toolbar>
-    </ion-header>
-  </div>
+        <div class="welcome-note">
+          <h1>WELCOME</h1>
+          <p>let's explore trends</p>
+        </div>
+      </div>
+      <ion-buttons slot="end">
+        <div class="search-container">
+          <ion-searchbar placeholder="Search" class="desktop-search"></ion-searchbar>
+          <ion-button class="mobile-search">
+            <ion-icon name="search-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+</div>
 
-  
-  <ion-content [fullscreen]="true">
-    <!-- large-slider-section -->
 
-    
+<ion-content [fullscreen]="true">
+  <!-- large-slider-section -->
 
-  </ion-content>
+  <swiper-container class="ion-margin-top ion-margin" pagination="true" [breakpoints]="{
+      '360':{
+        'slidesPerView':1,
+        'spaceBetween':30,
+      },
+      '760':{
+        'slidesPerView':2,
+        'spaceBetween':10,
+      },
+      '1221':{
+        'slidesPerView':3,
+        'spaceBetween':15,
+      },
+    }">
+    <swiper-slide><img src="/assets/images/s.jpg"></swiper-slide>
+    <swiper-slide><img src="/assets/images/s.jpg"></swiper-slide>
+    <swiper-slide><img src="/assets/images/s.jpg"></swiper-slide>
+
+  </swiper-container>
+
+
+  <!-- small-slider -->
+
+
+  <swiper-container class="ion-margin-top ion-margin" pagination="true" [breakpoints]="{
+      '360':{
+        'slidesPerView':1,
+        'spaceBetween':30,
+      },
+      '760':{
+        'slidesPerView':2,
+        'spaceBetween':10,
+      },
+      '1221':{
+        'slidesPerView':3,
+        'spaceBetween':15,
+      },
+    }">
+    <swiper-slide>
+
+      <div class="shoe-slider-main-div">
+        <div class="left-div">
+          <p>Shoe</p>
+        </div>
+        <div class="button-container">
+          <ion-button fill="clear" class="add-button">
+            <ion-icon name="add-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+
+
+
+    </swiper-slide>
+    <swiper-slide>shoe</swiper-slide>
+    <swiper-slide>shoe</swiper-slide>
+
+  </swiper-container>
+
+
+
+
+
+
+
+
+</ion-content>
