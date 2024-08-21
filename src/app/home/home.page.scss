@@ -106,6 +106,8 @@ swiper-container {
     align-items: center;
 
     img {
+      width: 100%;
+      height: auto;
       border-radius: 25px;
       align-items: center;
     }
@@ -118,11 +120,12 @@ swiper-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid red;
 
   .left-div {
     background-color: #5FE0D7;
     border-radius: 10px;
-    width: 50%;
+    width: 100%;
     height: 40px;
     display: flex;
     align-items: center;
@@ -135,19 +138,33 @@ swiper-container {
   }
 
   .button-container {
-    background-color: #5FE0D7;
+    background-color: white;
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
 
-    ion-button {
-      color: #000;
-      position: relative;
-      top: 45%;
-      left: 50%;
-      transform: translate(-52%, -55%);
-      font-size: 24px;
+    .btn-inner-div {
+      background-color: #5FE0D7;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+
+      ion-button {
+        color: #fff;
+        position: relative;
+        top: 45%;
+        left: 50%;
+        transform: translate(-52%, -55%);
+        font-size: 24px;
+      }
+   
     }
+
+
   }
 }
 
@@ -155,7 +172,7 @@ swiper-container {
 
 .arrivals-container {
   border: 2px solid orangered;
-  width: 90%;
+  width: 98%;
   height: 70px;
   margin: 0 auto;
   align-items: center;
@@ -275,5 +292,59 @@ swiper-container {
       }
     }
 
+  }
+}
+
+//  CSS-list-of-products-grid 
+
+.products {
+  ion-col {
+    border: 2px solid blueviolet;
+    .product-main-div {
+      border: 2px solid red;
+      width: 98%;
+      height: 300px;
+      margin: 0 auto;
+      .shoe-round-box {
+        width: 100%;
+        height: 150px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        .design-round-box {
+          width: 140px;
+          height: 140px;
+          border: 2px solid skyblue;
+          background-color: skyblue;
+          border-radius: 50%;
+          border-bottom-left-radius: 0 !important;
+          margin: 2px auto;
+        }
+      }
+      .product-detail-div {
+        width: 85%;
+        height: 80px;
+        display: flex;
+        float: right;
+        
+        .university {
+          float: left;
+          width: 50%;
+          height: 75px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .new {
+          width: 50%;
+          height: 50px;
+          float: right !important;
+          display: flex;
+          justify-content: center;
+          border-radius: 10px;
+          background-color: palegreen;
+        }
+      }
+    }
   }
 }

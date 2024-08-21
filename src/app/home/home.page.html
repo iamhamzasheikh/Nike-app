@@ -26,7 +26,7 @@
 <ion-content [fullscreen]="true">
   <!-- large-slider-section -->
 
-  <swiper-container class="ion-margin-top ion-margin" pagination="true" [breakpoints]="{
+  <swiper-container style="border: 2px solid black;" class="ion-margin-top ion-margin" pagination="true" [breakpoints]="{
       '360':{
         'slidesPerView':1,
         'spaceBetween':30,
@@ -50,9 +50,9 @@
   <!-- small-slider -->
 
 
-  <swiper-container class="ion-margin-top ion-margin" pagination="true" [breakpoints]="{
+  <swiper-container class="ion-margin-top ion-margin" [breakpoints]="{
       '360':{
-        'slidesPerView':1,
+        'slidesPerView':3,
         'spaceBetween':30,
       },
       '760':{
@@ -60,7 +60,7 @@
         'spaceBetween':10,
       },
       '1221':{
-        'slidesPerView':3,
+        'slidesPerView':4,
         'spaceBetween':15,
       },
     }">
@@ -70,9 +70,13 @@
           <p>Shoe</p>
         </div>
         <div class="button-container">
-          <ion-button fill="clear" class="add-button">
-            <ion-icon name="add-outline"></ion-icon>
-          </ion-button>
+
+          <div class="btn-inner-div">
+            <ion-button fill="clear" class="add-button">
+              <ion-icon name="add-outline"></ion-icon>
+            </ion-button>
+          </div>
+
         </div>
       </div>
     </swiper-slide>
@@ -82,10 +86,12 @@
         <div class="left-div" style="background-color: palegreen;">
           <p>Shoe</p>
         </div>
-        <div class="button-container" style="background-color: palegreen;">
-          <ion-button fill="clear" class="add-button">
-            <ion-icon name="add-outline"></ion-icon>
-          </ion-button>
+        <div class="button-container">
+          <div class="btn-inner-div" style="background-color: palegreen;">
+            <ion-button fill="clear" class="add-button">
+              <ion-icon name="add-outline"></ion-icon>
+            </ion-button>
+          </div>
         </div>
       </div>
     </swiper-slide>
@@ -95,10 +101,12 @@
         <div class="left-div" style="background-color: rgb(0, 81, 128)">
           <p>Shoe</p>
         </div>
-        <div class="button-container" style="background-color: rgb(0, 81, 128)">
-          <ion-button fill="clear" class="add-button">
-            <ion-icon name="add-outline"></ion-icon>
-          </ion-button>
+        <div class="button-container">
+          <div class="btn-inner-div" style="background-color: rgb(0, 81, 128)">
+            <ion-button fill="clear" class="add-button">
+              <ion-icon name="add-outline"></ion-icon>
+            </ion-button>
+          </div>
         </div>
       </div>
     </swiper-slide>
@@ -108,10 +116,12 @@
         <div class="left-div" style="background-color: rgb(255, 129, 56)">
           <p>Shoe</p>
         </div>
-        <div class="button-container" style="background-color: rgb(255, 129, 56)">
-          <ion-button fill="clear" class="add-button">
-            <ion-icon name="add-outline"></ion-icon>
-          </ion-button>
+        <div class="button-container">
+          <div class="btn-inner-div" style="background-color: rgb(255, 129, 56)">
+            <ion-button fill="clear" class="add-button">
+              <ion-icon name="add-outline"></ion-icon>
+            </ion-button>
+          </div>
         </div>
       </div>
     </swiper-slide>
@@ -121,14 +131,33 @@
         <div class="left-div" style="background-color: rgb(9, 160, 155)">
           <p>Shoe</p>
         </div>
-        <div class="button-container" style="background-color: rgb(9, 160, 155)">
-          <ion-button fill="clear" class="add-button">
-            <ion-icon name="add-outline"></ion-icon>
-          </ion-button>
+        <div class="button-container">
+          <div class="btn-inner-div" style="background-color: rgb(9, 160, 155)">
+            <ion-button fill="clear" class="add-button">
+              <ion-icon name="add-outline"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <div class="shoe-slider-main-div">
+        <div class="left-div" style="background-color: rgb(0, 81, 128)">
+          <p>Shoe</p>
+        </div>
+        <div class="button-container">
+          <div class="btn-inner-div" style="background-color: rgb(0, 81, 128)">
+            <ion-button fill="clear" class="add-button">
+              <ion-icon name="add-outline"></ion-icon>
+            </ion-button>
+          </div>
         </div>
       </div>
     </swiper-slide>
   </swiper-container>
+
+  <!-- new-arrival & see-all  -->
 
   <div class="arrivals-container">
     <div class="arrival-heading">
@@ -137,9 +166,40 @@
     <div class="para-arrival">
       <p>See All</p>
     </div>
-
   </div>
 
+  <!-- list-of-products-grid -->
+
+  <ion-grid>
+    <ion-row class="products">
+      <ion-col>
+        <div class="product-main-div">
+          <div class="shoe-round-box">
+            <div class="design-round-box">
+              <img src="" alt="" srcset="">
+            </div>
+          </div>
+
+          <div class="product-detail-div">
+            <div class="university"><p>University <br> Shoe for <br> all people</p></div>
+            <div class="new">
+              <p>New</p>
+            </div>
+          </div>
+          <div class="price-box"></div>
+
+        </div>
+      </ion-col>
+
+
+
+      <ion-col>2</ion-col>
+      <ion-col>3</ion-col>
+      <ion-col>4</ion-col>
+      <ion-col>5</ion-col>
+      <ion-col>6</ion-col>
+    </ion-row>
+  </ion-grid>
 
 
 
