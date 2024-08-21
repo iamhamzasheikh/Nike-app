@@ -1,8 +1,10 @@
 .header {
   padding: 10px 20px;
   background-color: #ffffff;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 ion-header {
@@ -120,7 +122,7 @@ swiper-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid red;
+
 
   .left-div {
     background-color: #5FE0D7;
@@ -161,7 +163,7 @@ swiper-container {
         transform: translate(-52%, -55%);
         font-size: 24px;
       }
-   
+
     }
 
 
@@ -171,8 +173,7 @@ swiper-container {
 // new-arrivals-container-css
 
 .arrivals-container {
-  border: 2px solid orangered;
-  width: 98%;
+  width: 95%;
   height: 70px;
   margin: 0 auto;
   align-items: center;
@@ -180,7 +181,7 @@ swiper-container {
   justify-content: space-between;
 
   .arrival-heading {
-    border: 2px solid red;
+
     width: 20%;
     height: 50px;
     display: flex;
@@ -192,7 +193,7 @@ swiper-container {
   }
 
   .para-arrival {
-    border: 2px solid red;
+
     width: 10%;
     height: 50px;
     display: flex;
@@ -298,35 +299,54 @@ swiper-container {
 //  CSS-list-of-products-grid 
 
 .products {
+  width: 95%;
+  margin: 0 auto;
   ion-col {
-    border: 2px solid blueviolet;
+
     .product-main-div {
-      border: 2px solid red;
       width: 98%;
       height: 300px;
       margin: 0 auto;
+      position: relative;
+
       .shoe-round-box {
         width: 100%;
         height: 150px;
-        border: 2px solid black;
         display: flex;
         justify-content: center;
+
         .design-round-box {
-          width: 140px;
-          height: 140px;
+          width: 150px;
+          height: 150px;
           border: 2px solid skyblue;
           background-color: skyblue;
           border-radius: 50%;
           border-bottom-left-radius: 0 !important;
           margin: 2px auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .img-div {
+            width: 120px;
+            height: 120px;
+            align-items: center;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
         }
       }
+
       .product-detail-div {
         width: 85%;
         height: 80px;
         display: flex;
         float: right;
-        
+        justify-content: space-between;
+
         .university {
           float: left;
           width: 50%;
@@ -335,14 +355,102 @@ swiper-container {
           align-items: center;
           justify-content: center;
         }
+
         .new {
-          width: 50%;
+          width: 40%;
           height: 50px;
           float: right !important;
           display: flex;
           justify-content: center;
           border-radius: 10px;
           background-color: palegreen;
+        }
+      }
+
+    }
+
+    .price-box {
+      width: 85%;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+
+      .icon {
+        ion-icon {
+          font-size: 70px;
+        }
+      }
+
+      div {
+        width: 40%;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+    }
+  }
+}
+
+
+ion-footer {
+  width: 100%;
+  background-color: transparent;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  ion-toolbar {
+    background-color: transparent;
+    color: #000;
+
+    ion-grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ion-row {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 20px;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        ion-col {
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          ion-icon {
+            font-size: 24px;
+
+          }
+
+          ion-icon:hover {
+            cursor: pointer;
+            color: black;
+
+
+          }
+
+          p {
+            margin-top: 4px;
+            font-size: 12px;
+          }
+
+          p:hover {
+            cursor: pointer;
+            color: black;
+          }
         }
       }
     }
