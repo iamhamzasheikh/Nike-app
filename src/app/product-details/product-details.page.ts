@@ -9,6 +9,5 @@ register();
   styleUrls: ['./product-details.page.scss'],
 })
 export class ProductDetailsPage {
-
   constructor() { }
 }
