@@ -67,19 +67,32 @@
           </div>
         </div>
         <!-- sizes-of-products -->
-        <ion-list class="product-sizes">
-          <div class="number-container">
-            <div class="number-box">5</div>
-            <div class="number-box">5.5</div>
-            <div class="number-box">6</div>
-            <div class="number-box">6.6</div>
-            <div class="number-box">7</div>
-            <div class="number-box">7.7</div>
-            <div class="number-box">8</div>
-            <div class="number-box">8.8</div>
-            <div class="number-box">9</div>
-            <div class="number-box">9.9</div>
-          </div>
+        <ion-list class="size-container">
+          <swiper-container class="ion-margin-top ion-margin box-container"[breakpoints]="{
+            '325': {
+              'slidesPerView': 3,
+              'spaceBetween': 10,
+            },
+            '760': {
+              'slidesPerView': 5,
+              'spaceBetween': 15,
+            },
+            '1221': {
+              'slidesPerView': 6,
+              'spaceBetween': 20,
+            } 
+          }">
+            <swiper-slide><div class="size-box">5</div></swiper-slide>
+            <swiper-slide><div class="size-box">5.5</div></swiper-slide>
+            <swiper-slide><div class="size-box">6</div></swiper-slide>
+            <swiper-slide><div class="size-box">6.6</div></swiper-slide>
+            <swiper-slide><div class="size-box">7</div></swiper-slide>
+            <swiper-slide><div class="size-box">7.7</div></swiper-slide>
+            <swiper-slide><div class="size-box">8</div></swiper-slide>
+            <swiper-slide><div class="size-box">8.8</div></swiper-slide>
+            <swiper-slide><div class="size-box">9</div></swiper-slide>
+            <swiper-slide><div class="size-box">9.9</div></swiper-slide>
+          </swiper-container>
         </ion-list>
         <!-- Description-section -->
         <ion-list class="description-div">

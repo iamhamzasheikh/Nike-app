@@ -4,7 +4,7 @@ ion-grid {
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         border-radius: 10px;
         width: 90%;
-        height: 75vh;
+        height: 90%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -14,9 +14,11 @@ ion-grid {
             height: 100%;
         }
 
+
         ion-col:first-child {
             background: linear-gradient(to bottom, #a8e063, #f5f7a1);
             border-radius: 10px;
+            
 
             .header-col-main {
                 width: 100%;
@@ -54,6 +56,7 @@ ion-grid {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                border: 2px solid red;
 
                 div {
                     width: 100px;
@@ -167,74 +170,79 @@ ion-grid {
                 }
             }
 
-            .product-sizes {
+            // product-sizes-css
+            .size-container {
+                border: 2px solid #000;
+                margin: 0 auto;
                 width: 100%;
-                height: 200px;
-                margin: 10px auto 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
 
-                .number-container {
+                .box-container {
+                    width: 100%;
+                    height: 70px;
+                    margin: 0 auto;
                     display: flex;
-                    gap: 22px;
-                    flex-wrap: wrap;
                     justify-content: center;
-                    align-items: center;
-                }
+                    align-items: center; 
 
-                .number-box {
-                    background-color: #e0f7fa;
-                    padding: 10px 20px;
-                    border-radius: 8px;
-                    text-align: center;
-                    font-size: 1.2rem;
-                    color: #333;
-                    flex: 1 1 auto;
-                    min-width: 60px;
-                }
-
-                @media (max-width: 768px) {
-                    .number-box {
-                        padding: 8px 16px;
-                        font-size: 1rem;
+                    .size-box {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50px;
+                        height: 50px;
+                        background-color: #e6f3f5;
+                        border-radius: 10px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #333;
+                        margin: 10px auto;
                     }
+
                 }
+            }
 
-                @media (max-width: 480px) {
-                    .number-box {
-                        padding: 6px 12px;
-                        font-size: 0.9rem;
-                    }
+            @media (max-width: 760px) {
+                .size-box {
+                    height: 45px;
+                    font-size: 14px;
                 }
+            }
 
-
+            @media (max-width: 360px) {
+                .size-box {
+                    height: 40px;
+                    font-size: 12px;
+                }
             }
 
             .description-div {
-                width: 90%;
-                height: 250px;
+                width: 100%;
+                height: 180px;
                 margin: 10px auto 0;
                 display: block;
                 align-items: center;
                 justify-content: center;
+                border: 2px solid red;
 
                 ion-list {
                     width: 100%;
-                    height: 50px;
                     display: flex;
                     align-items: center;
                     margin: 10px 0;
                 }
 
                 ion-list:first-child {
+                    height: 30px;
+                    margin: 0;
+
                     h2 {
+
                         font-weight: 700;
                     }
                 }
 
                 ion-list:nth-child(2) {
-                    height: 150px;
+                    height: 100px;
 
                     p {
                         font-size: 20px;
@@ -254,11 +262,12 @@ ion-grid {
                 /* Medium screens (tablets, 601px to 1024px) */
                 @media (min-width: 601px) and (max-width: 1024px) {
                     ion-list:nth-child(2) {
-                        height: 150px;
+                        height: 120px;
+
                     }
 
                     ion-list:nth-child(2) p {
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
 
@@ -274,23 +283,44 @@ ion-grid {
                 }
             }
         }
+
         .green-btn-container {
-            width: 100%;
-            height: 120px;
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 90%;
+            height: auto;
+            margin: 20px auto 0;
             .btn-success {
                 background-color: #22bb33;
                 border-radius: 10px;
-                width: 90%;
-                height: 70px;
+                width: 100%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
                 p {
                     text-align: center;
                     color: #fff;
+                    font-size: 1rem;
                 }
             }
         }
+
+        @media (min-width: 768px) {
+            .green-btn-container {
+                .btn-success {
+                    p {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+            ion-row {
+                width: 100%;
+                height: 100%;
+            }
+            
     }
 }
