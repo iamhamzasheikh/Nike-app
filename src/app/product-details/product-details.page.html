@@ -3,23 +3,23 @@
     <ion-row>
       <ion-col size="12" size-md="6" size-lg="6">
         <div class="back-color">
-        <!-- header-section -->
-        <div class="header-col-main">
-          <div class="arrow-back-circle"><ion-icon name="chevron-back-circle-outline"></ion-icon></div>
-          <div class="heart-circle"><ion-icon name="heart-circle-outline"></ion-icon></div>
-        </div>
-        <!-- Special-Edition & Price-Section -->
-        <div class="special-edition-main-box">
-          <div>
-            <h3>Nike Air Special Edition</h3>
+          <!-- header-section -->
+          <div class="header-col-main">
+            <div class="arrow-back-circle"><ion-icon name="chevron-back-circle-outline"></ion-icon></div>
+            <div class="heart-circle"><ion-icon name="heart-circle-outline"></ion-icon></div>
           </div>
-          <div class="price">
-            <p>$60</p>
+          <!-- Special-Edition & Price-Section -->
+          <div class="special-edition-main-box">
+            <div>
+              <h3>Nike Air Special Edition</h3>
+            </div>
+            <div class="price">
+              <p>$60</p>
+            </div>
           </div>
-        </div>
-        <!-- Swiper-Section -->
-        <div class="swiper-container">
-          <swiper-container class="ion-margin-top ion-margin" pagination="true" [breakpoints]="{
+          <!-- Swiper-Section -->
+          <div class="swiper-container">
+            <swiper-container class="ion-margin-top ion-margin" pagination="true" [breakpoints]="{
             '360':{
               'slidesPerView':1,
               'spaceBetween':30,
@@ -33,27 +33,27 @@
               'spaceBetween':15,
             },
           }">
-            <swiper-slide class="b">
-              <div class="slider-background-img">
-                <ion-img src="/assets/images/shoes_black-removebg-preview.png"></ion-img>
-              </div>
-            </swiper-slide>
+              <swiper-slide class="b">
+                <div class="slider-background-img">
+                  <ion-img src="/assets/images/shoes_black-removebg-preview.png"></ion-img>
+                </div>
+              </swiper-slide>
 
-            <swiper-slide class="b">
-              <div class="slider-background-img">
-                <ion-img src="/assets/images/shoes_black-removebg-preview.png"></ion-img>
-              </div>
-            </swiper-slide>
-            <swiper-slide class="b">
-              <div class="slider-background-img">
-                <ion-img src="/assets/images/shoes_black-removebg-preview.png"></ion-img>
-              </div>
-            </swiper-slide>
+              <swiper-slide class="b">
+                <div class="slider-background-img">
+                  <ion-img src="/assets/images/shoes_black-removebg-preview.png"></ion-img>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="b">
+                <div class="slider-background-img">
+                  <ion-img src="/assets/images/shoes_black-removebg-preview.png"></ion-img>
+                </div>
+              </swiper-slide>
 
-          </swiper-container>
+            </swiper-container>
 
+          </div>
         </div>
-      </div>
       </ion-col>
 
       <!-- right-side -->
@@ -70,30 +70,55 @@
         </div>
         <!-- sizes-of-products -->
         <ion-list class="size-container">
-          <swiper-container class="ion-margin-top ion-margin box-container"[breakpoints]="{
-            '325': {
-              'slidesPerView': 3,
-              'spaceBetween': 10,
-            },
-            '760': {
-              'slidesPerView': 5,
-              'spaceBetween': 15,
-            },
-            '1221': {
-              'slidesPerView': 6,
-              'spaceBetween': 20,
-            } 
+          <swiper-container class="ion-margin-top ion-margin box-container" [breakpoints]="{
+'250': {
+  'slidesPerView': 3,
+  'spaceBetween': 10,
+},
+'401': {
+  'slidesPerView': 4,
+  'spaceBetween': 15,
+},
+'801': {
+  'slidesPerView': 6,
+  'spaceBetween': 20,
+},
+'1201': {
+  'slidesPerView': 7,
+  'spaceBetween': 25,
+}
+
           }">
-            <swiper-slide><div class="size-box">5</div></swiper-slide>
-            <swiper-slide><div class="size-box">5.5</div></swiper-slide>
-            <swiper-slide><div class="size-box">6</div></swiper-slide>
-            <swiper-slide><div class="size-box">6.6</div></swiper-slide>
-            <swiper-slide><div class="size-box">7</div></swiper-slide>
-            <swiper-slide><div class="size-box">7.7</div></swiper-slide>
-            <swiper-slide><div class="size-box">8</div></swiper-slide>
-            <swiper-slide><div class="size-box">8.8</div></swiper-slide>
-            <swiper-slide><div class="size-box">9</div></swiper-slide>
-            <swiper-slide><div class="size-box">9.9</div></swiper-slide>
+            <swiper-slide>
+              <div class="size-box">5</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="size-box">5.5</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="size-box">6</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="size-box">6.6</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="size-box">7</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="size-box">7.7</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="size-box">8</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="size-box">8.8</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="size-box">9</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="size-box">9.9</div>
+            </swiper-slide>
           </swiper-container>
         </ion-list>
         <!-- Description-section -->
@@ -110,11 +135,11 @@
           </ion-list>
         </ion-list>
         <!-- add-to-cart-btn -->
-         <ion-list class="green-btn-container">
+        <ion-list class="green-btn-container">
           <ion-list class="btn-success">
             <p>Add to Cart</p>
           </ion-list>
-         </ion-list>
+        </ion-list>
 
 
 

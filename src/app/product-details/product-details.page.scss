@@ -28,7 +28,9 @@ ion-grid {
                 top: 0;
                 left: 0;
                 overflow: hidden;
-                
+                clip-path: polygon(100% 85%, 100% 0, 0 0, 0 100%);
+
+
                 .header-col-main {
                     width: 100%;
                     height: 70px;
@@ -36,22 +38,22 @@ ion-grid {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-    
+
                     div:first-child {
                         margin-left: 15px;
                     }
-    
+
                     div:nth-child(2) {
                         margin-right: 15px;
                     }
-    
+
                     div {
                         width: 80px;
                         height: 60px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-    
+
                         ion-icon {
                             font-size: 40px;
                         }
@@ -108,13 +110,15 @@ ion-grid {
             .swiper-container {
                 // border: 2px solid brown;
                 width: 100%;
-                height: 250px;
+                height: 200px;
                 margin: 0 auto;
                 position: absolute;
-                bottom: 0;
+                bottom: 1;
                 left: 0;
+                transform: rotate(-10deg);
 
                 swiper-slide {
+
                     .slider-background-img {
                         background-image: url(/assets/images/nike-black-img.png);
                         opacity: 0.6;
@@ -186,7 +190,7 @@ ion-grid {
                     margin: 0 auto;
                     display: flex;
                     justify-content: center;
-                    align-items: center; 
+                    align-items: center;
 
                     .size-box {
                         display: flex;
@@ -259,7 +263,7 @@ ion-grid {
                     }
 
                     ion-list:nth-child(2) p {
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
 
@@ -292,8 +296,9 @@ ion-grid {
             width: 90%;
             height: auto;
             margin: 20px auto 0;
+
             .btn-success {
-                background-color: #367E73;
+                background-color: #1a574e;
                 border-radius: 10px;
                 width: 100%;
                 height: 70px;
@@ -309,9 +314,29 @@ ion-grid {
             }
         }
 
+        @media (max-width: 400px) {
+            .green-btn-container {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s ease-in-out;
+                margin-top: 25px;
+
+                .btn-success {
+                    height: 50px;
+
+                    p {
+                        font-size: 0.4rem;
+                    }
+                }
+            }
+        }
+
         @media (max-width: 768px) {
             .green-btn-container {
                 position: sticky;
+
                 .btn-success {
                     p {
                         font-size: 1.1rem;
@@ -319,46 +344,34 @@ ion-grid {
                 }
             }
         }
+
+        @media (min-width:769px) and (max-width: 1200px) {
+            .green-btn-container {
+                transition: 0.3s ease-in-out;
+                margin-top: -10px;
+            }
+        }
     }
 
     @media (max-width: 768px) {
-            ion-row {
-                width: 100%;
-                height: 100%;
-                ion-col {
-                    height: 60%;
-                }
-                ion-col:first-child {
-                    .back-color {
-                        border-bottom-left-radius: 20px;
-                        border-bottom-right-radius: 20px;
-                    }
-                }
-                
-            }
-            
-    }
-
-    @media (max-width: 425px) {
         ion-row {
             width: 100%;
             height: 100%;
-            border: 0 !important;
-            ion-col {
-                height: 55%;
-            }
-        }
-        
-}
+            box-shadow: none;
+            border-radius: 0 !important;
 
-@media (min-width: 769px) and (max-width: 900px) {
-    ion-row {
-        height: 65%;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            ion-col {
+                height: 100%;
+            }
+
+            ion-col:first-child {
+                .back-color {
+                    border-radius: 0;
+                    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0% 85%);
+                }
+            }
+
+        }
 
     }
-}
-
-
-
 }
